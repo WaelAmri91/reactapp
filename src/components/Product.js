@@ -18,22 +18,27 @@ export default class Product extends Component{
     expensiveOrNot(){
         if (this.state.Product.price>2){return <p>Expensive</p>}
     }
-    render(){
-        console.log((this.props))
-        return <ProductFrame>
-                  <ProductImageWrapper>
+    render() {
+        return (
+            <ProductFrame>
+                <ProductImageWrapper>
                     <ProductImage src={this.state.Product.img}></ProductImage>
-                  </ProductImageWrapper>
-                  <ProductInfoWrapper>
-                    <span>{this.state.Product.name}</span>
-                    <span>{this.state.Product.price}</span>
-                      {this.state.Product.price> 2 ?"Expensive" :"cheap"}
-                      {this.expensiveOrNot()}
-                  {/* if sans else   {this.state.Product.price> 2 && "Expensive"} */}
-
-                      <button onClick={this.addPrice}>Add</button>
-                   </ProductInfoWrapper>
-                </ProductFrame>;
+                </ProductImageWrapper>
+                <ProductInfoWrapper>
+          <span>
+            <a href={"/product/" + this.state.Product.name}>
+              {this.state.Product.name}
+            </a>
+          </span>
+                    <span>
+            {this.state.Product.price}{" "}
+                        {/* {Number(this.state.product.price) > 2 ? "expensive" : "Promo"} */}
+                        {Number(this.state.Product.price) > 2 && "expensive"}
+          </span>
+                    <button onClick={this.addPrice}>Add 0.1</button>
+                </ProductInfoWrapper>
+            </ProductFrame>
+        );
     }
 }
 
