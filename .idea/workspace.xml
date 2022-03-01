@@ -23,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ProjectReact2/ShopApiFrontEnd" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -37,7 +37,8 @@
       <updated>1645297189833</updated>
       <workItem from="1645297191382" duration="10000" />
       <workItem from="1645297224185" duration="12486000" />
-      <workItem from="1645370927225" duration="4056000" />
+      <workItem from="1645370927225" duration="4653000" />
+      <workItem from="1645447778187" duration="57000" />
     </task>
     <servers />
   </component>
